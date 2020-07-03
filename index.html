@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script src="https://code.jquery.com/jquery-1.12.3.min.js" integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ=" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Fast Feedback Form</title>
+</head>
+<body>
+  <div id="content">
+    <h1>Fast Feedback Form</h1>
+
+
+    <h2>Objective</h2>
+    <p>This project is designed to enhance user experience through interactivity that provides feedback when the user inserts correct/incorrect 
+        information.</p>
+    <p>When the user enters incorrect information, the text box that is selected will turn red and a prompt will be given as to what criteria must 
+        be met. Once correct information is entered, the box will turn green.</p>
+    <p>If the user does make an error, please refresh the page and start over (this is a bug I am still trying to figure out). 
+        If correct input is put in, the color around the box will change but the error notification will not clear.</p>
+
+    <form id="form" action="">
+      <input class="input-element" id="name" type="text" value="" placeholder="Username">
+      <span id="name-feedback"></span><br>
+
+      <input class="input-element" id="password" type="password" value="" placeholder="Password">
+      <span id="password-feedback"></span><br>
+
+      <textarea class="input-element" id="message" name="message" cols="50" rows="20" placeholder="Comments"></textarea>
+      <span id="message-feedback"></span><br>
+
+      <input class="input-element" id="checkbox" type="checkbox" name="cb">
+        <label for="checkbox">I agree to the terms and conditions</label>
+      <span class="input-element" id="checkbox-feedback"></span><br>
+      
+      <input class="input-element" type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
